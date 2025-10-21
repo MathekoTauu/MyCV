@@ -2,25 +2,47 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Matheko Masemola</title>
     <link rel="stylesheet" href="styling.css">
+    
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="favicon_io/site.webmanifest">
 </head>
 <body>
     <!-- Header -->
     <header>
         <nav class="container">
-            <div class="logo">Matheko Masemola</div>
+            <div class="logo-container">
+                <div class="logo">
+                    <div class="logo-icon">M</div>
+                    <div class="logo-text">
+                        <span class="name">Matheko</span>
+                        <span class="title">UI/UX Designer & Software Engineer</span>
+                    </div>
+                </div>
+            </div>
             <ul class="nav-links" id="navLinks">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
+            <div class="header-actions">
+                <a href="Matheko Masemola CV.pdf" class="resume-btn" target="_blank">
+                  <!--<span class="btn-icon">📄</span> -->  
+                    <span class="btn-text">Resume</span>
+                </a>
+            </div>
             <div class="mobile-menu" id="mobileMenu">
-                <div class="hamburger"></div>
-                <div class="hamburger"></div>
-                <div class="hamburger"></div>
+                <div class="hamburger-container">
+                    <div class="hamburger"></div>
+                    <div class="hamburger"></div>
+                    <div class="hamburger"></div>
+                </div>
             </div>
         </nav>
     </header>
@@ -30,94 +52,433 @@
         <div class="container">
             <div class="hero-content fade-in">
                 <div class="hero-text">
-                    <h1>Hi, I'm <span class="highlight">Matheko Masemola</span></h1>
-                    <p>A passionate UI/UX Designer creating meaningful digital experiences that connect users with beautiful, functional design solutions.</p>
-                    <a href="#portfolio" class="cta-button">View My Work</a>
+                    <div class="greeting">Hello, I'm</div>
+                    <h1><span class="highlight">Matheko Masemola</span></h1>
+                    <h2 class="subtitle">UI/UX Designer & Software Engineer</h2>
+                    <p>Code is my canvas, and design is my compass. I bring ideas to life through clean architecture, responsive interfaces, and a deep understanding of how users interact with technology.</p>
+                    <div class="hero-buttons">
+                        <a href="#portfolio" class="cta-button primary">View My Work</a>
+                        <a href="#contact" class="cta-button secondary">Let's Connect</a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <span class="stat-number">+</span>
+                            <span class="stat-label">Years Experience</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">15+</span>
+                            <span class="stat-label">Projects Completed</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label">Client Satisfaction</span>
+                        </div>
+                    </div>
                 </div>
                 <div class="hero-image">
-                    <div class="profile-card">
-                        <div class="profile-img">👋</div>
-                        <h3>UI/UX Designer</h3>
-                        <p>Junior Designer</p>
+                    <div class="image-container">
+                        <img src="media/Matheko.jpg" alt="Matheko Masemola - UI/UX Designer" class="profile-photo">
+                        <div class="image-decoration"></div>
+                        <div class="floating-elements">
+                            <div class="float-item design-icon">🎨</div>
+                            <div class="float-item code-icon">💻</div>
+                            <div class="float-item idea-icon">💡</div>
+                        </div>
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="hero-background">
+            <div class="bg-shape shape-1"></div>
+            <div class="bg-shape shape-2"></div>
+            <div class="bg-shape shape-3"></div>
         </div>
     </section>
 
     <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
-            <h2 class="section-title">About Me</h2>
+            <div class="about-header">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-description">Discover my journey, expertise, and the technologies I work with</p>
+            </div>
+            
             <div class="about-content">
-                <div class="about-text">
-                    <h3>Crafting Digital Experiences</h3>
-                    <p>With over a year of experience in UI/UX design, I specialize in creating user-centered design solutions that balance aesthetics with functionality. My approach combines research-driven insights with creative problem-solving to deliver designs that truly resonate with users.</p>
-                    <br>
-                    <p>I believe great design is invisible – it simply works. My goal is to create interfaces that feel natural and intuitive, making complex interactions feel effortless.</p>
+                <!-- About Introduction -->
+                <div class="about-intro">
+                    <div class="about-text">
+                        <h3>Crafting Digital Experiences</h3>
+                        <p>With over a year of experience in UI/UX design, I specialize in creating user-centered design solutions that balance aesthetics with functionality. My approach combines research-driven insights with creative problem-solving to deliver designs that truly resonate with users.</p>
+                        <p>I believe great design is invisible – it simply works. My goal is to create interfaces that feel natural and intuitive, making complex interactions feel effortless.</p>
+                        
+                        <div class="about-highlights">
+                            <div class="highlight-item">
+                                <span class="highlight-number">1+</span>
+                                <span class="highlight-label">Years Experience</span>
+                            </div>
+                            <div class="highlight-item">
+                                <span class="highlight-number">15+</span>
+                                <span class="highlight-label">Projects Completed</span>
+                            </div>
+                            <div class="highlight-item">
+                                <span class="highlight-number">100%</span>
+                                <span class="highlight-label">Client Satisfaction</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="skills">
-                    <h3>Skills & Expertise</h3>
-                    <ul class="skills-list">
-                        <li>🎨 User Interface Design</li>
-                        <li>🧠 User Experience Research</li>
-                        <li>📱 Mobile App Design</li>
-                        <li>💻 Web Design</li>
-                        <li>🔧 Prototyping & Wireframing</li>
-                        <li>📊 User Testing & Analytics</li>
-                    </ul>
+
+                <!-- Skills and Expertise Section -->
+                <div class="skills-expertise">
+                    <!-- Industry Knowledge Orbit -->
+                    <div class="knowledge-section">
+                        <div class="floating-circle-container">
+                            <h3>🧠 Industry Knowledge</h3>
+                            <div class="orbit-system">
+                                <!-- Center Circle -->
+                                <div class="center-circle">
+                                    <div class="center-icon">💡</div>
+                                    <span class="center-text">Expertise</span>
+                                </div>
+                                
+                                <!-- Orbiting Knowledge Circles -->
+                                <div class="orbit-circle orbit-1" data-tooltip="Building scalable software solutions">
+                                    <span class="orbit-icon">💻</span>
+                                    <span class="orbit-label">Software Dev</span>
+                                </div>
+                                
+                                <div class="orbit-circle orbit-2" data-tooltip="Full-stack web development">
+                                    <span class="orbit-icon">🌐</span>
+                                    <span class="orbit-label">Web Dev</span>
+                                </div>
+                                
+                                <div class="orbit-circle orbit-3" data-tooltip="Backend systems & APIs">
+                                    <span class="orbit-icon">⚙️</span>
+                                    <span class="orbit-label">Server-Side</span>
+                                </div>
+                                
+                                <div class="orbit-circle orbit-4" data-tooltip="Interactive user interfaces">
+                                    <span class="orbit-icon">🎨</span>
+                                    <span class="orbit-label">Front-End</span>
+                                </div>
+                                
+                                <div class="orbit-circle orbit-5" data-tooltip="Modern web applications">
+                                    <span class="orbit-icon">📱</span>
+                                    <span class="orbit-label">Web Apps</span>
+                                </div>
+                                
+                                <div class="orbit-circle orbit-6" data-tooltip="Database architecture & design">
+                                    <span class="orbit-icon">🗄️</span>
+                                    <span class="orbit-label">DB Design</span>
+                                </div>
+                                
+                                <div class="orbit-circle orbit-7" data-tooltip="Database management systems">
+                                    <span class="orbit-icon">💾</span>
+                                    <span class="orbit-label">DBMS</span>
+                                </div>
+                                
+                                <div class="orbit-circle orbit-8" data-tooltip="User experience & interface design">
+                                    <span class="orbit-icon">🎯</span>
+                                    <span class="orbit-label">UI/UX</span>
+                                </div>
+                                
+                                <div class="orbit-circle orbit-9" data-tooltip="Aligning design with business goals">
+                                    <span class="orbit-icon">📈</span>
+                                    <span class="orbit-label">Marketing</span>
+                                </div>
+                                
+                                <div class="orbit-circle orbit-10" data-tooltip="User testing & research">
+                                    <span class="orbit-icon">🧪</span>
+                                    <span class="orbit-label">Testing</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tools & Technologies Section -->
+                    <div class="tech-section">
+                        <div class="section-header">
+                            <h3 class="tech-section-title">🛠️ Tools & Technologies</h3>
+                            <p class="section-subtitle">Complete development ecosystem at your fingertips</p>
+                        </div>
+
+                        <div class="tech-grid">
+                            <!-- Languages -->
+                            <div class="tech-category">
+                                <div class="category-header">
+                                    <span class="category-icon">💻</span>
+                                    <h4 class="category-title">Languages</h4>
+                                </div>
+                                <div class="tech-items">
+                                    <span class="tech-badge">🐍 Python</span>
+                                    <span class="tech-badge">⚡ JavaScript</span>
+                                    <span class="tech-badge">🔧 PHP</span>
+                                    <span class="tech-badge">📄 HTML</span>
+                                    <span class="tech-badge">🎨 CSS</span>
+                                    <span class="tech-badge">☕ Java</span>
+                                    <span class="tech-badge">💎 C#</span>
+                                </div>
+                            </div>
+
+                            <!-- Frameworks -->
+                            <div class="tech-category">
+                                <div class="category-header">
+                                    <span class="category-icon">🚀</span>
+                                    <h4 class="category-title">Frameworks</h4>
+                                </div>
+                                <div class="tech-items">
+                                    <span class="tech-badge">🚀 Django</span>
+                                    <span class="tech-badge">🔥 DRF</span>
+                                    <span class="tech-badge">🌐 ASP.NET Core</span>
+                                    <span class="tech-badge">🅰️ Angular CLI</span>
+                                </div>
+                            </div>
+
+                            <!-- Design Tools -->
+                            <div class="tech-category">
+                                <div class="category-header">
+                                    <span class="category-icon">🎨</span>
+                                    <h4 class="category-title">Design</h4>
+                                </div>
+                                <div class="tech-items">
+                                    <span class="tech-badge">📐 Figma</span>
+                                    <span class="tech-badge">🎨 Illustrator</span>
+                                    <span class="tech-badge">🖼️ Photoshop</span>
+                                    <span class="tech-badge">✨ Canva</span>
+                                </div>
+                            </div>
+
+                            <!-- Database -->
+                            <div class="tech-category">
+                                <div class="category-header">
+                                    <span class="category-icon">🗄️</span>
+                                    <h4 class="category-title">Database</h4>
+                                </div>
+                                <div class="tech-items">
+                                    <span class="tech-badge">🐬 MySQL</span>
+                                    <span class="tech-badge">💿 SQLite</span>
+                                    <span class="tech-badge">📝 WordPress</span>
+                                </div>
+                            </div>
+
+                            <!-- DevOps -->
+                            <div class="tech-category">
+                                <div class="category-header">
+                                    <span class="category-icon">⚙️</span>
+                                    <h4 class="category-title">DevOps</h4>
+                                </div>
+                                <div class="tech-items">
+                                    <span class="tech-badge">🐳 Docker</span>
+                                    <span class="tech-badge">📚 GitHub Pages</span>
+                                    <span class="tech-badge">🌟 Render</span>
+                                    <span class="tech-badge">🎛️ cPanel</span>
+                                    <span class="tech-badge">🔀 Git</span>
+                                    <span class="tech-badge">🐙 GitHub</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+        </div>
         </div>
     </section>
 
     <!-- Portfolio Section -->
     <section id="portfolio" class="portfolio">
         <div class="container">
-            <h2 class="section-title">My Work</h2>
+            <div class="portfolio-header">
+                <h2 class="section-title">My Work</h2>
+                <p class="portfolio-subtitle">A showcase of projects I've crafted with passion and precision</p>
+                <div class="portfolio-filters">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="web">Web Apps</button>
+                    <button class="filter-btn" data-filter="design">UI/UX Design</button>
+                    <button class="filter-btn" data-filter="landing">Landing Pages</button>
+                </div>
+            </div>
             <div class="portfolio-grid">
-                <div class="portfolio-item" onclick="openProject(1)">
-                    <div class="portfolio-img">📱</div>
+                <div class="portfolio-item" data-category="web" data-github="django-ecommerce">
+                    <div class="portfolio-image">
+                        <div class="portfolio-img">�️</div>
+                        <div class="portfolio-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/MathekoTauu/Trade_hub" class="project-btn live-btn" title="View Live Site">
+                                    <span class="btn-icon">🔗</span>
+                                    <span class="btn-text">Live Demo</span>
+                                </a>
+                                <a href="https://github.com/MathekoTauu/Trade_hub" class="project-btn github-btn" target="_blank" title="View on GitHub">
+                                    <span class="btn-icon">📂</span>
+                                    <span class="btn-text">GitHub</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                     <div class="portfolio-content">
-                        <h3>E-commerce With Django</h3>
-                        <p>A clean and intuitive shopping experience designed for modern consumers. Focused on conversion optimization and user engagement.</p>
+                        <div class="project-category">Web Application</div>
+                        <h3>E-commerce Platform</h3>
+                        <p>A full-featured e-commerce solution built with Django. Features include user authentication, shopping cart, payment integration, and admin dashboard for inventory management.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Django</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">SQLite</span>
+                            <span class="tech-tag">Bootstrap</span>
+                        </div>
                     </div>
                 </div>
-                <div class="portfolio-item" onclick="openProject(2)">
-                    <div class="portfolio-img">🌐</div>
+                
+                <div class="portfolio-item" data-category="design" data-github="coffee-shop-design">
+                    <div class="portfolio-image">
+                        <div class="portfolio-img">☕</div>
+                        <div class="portfolio-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/MathekoTauu/Coffee-Shop" class="project-btn live-btn" title="View Live Site">
+                                    <span class="btn-icon">🔗</span>
+                                    <span class="btn-text">Live Demo</span>
+                                </a>
+                                <a href="https://github.com/MathekoTauu/Coffee-Shop" class="project-btn github-btn" target="_blank" title="View on GitHub">
+                                    <span class="btn-icon">📂</span>
+                                    <span class="btn-text">GitHub</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                     <div class="portfolio-content">
-                        <h3>Coffee-Shop Design</h3>
-                        <p>Comprehensive dashboard design for a B2B software platform. Emphasized data visualization and user workflow optimization.</p>
+                        <div class="project-category">UI/UX Design</div>
+                        <h3>Coffee Shop Website</h3>
+                        <p>A warm and inviting website design for a local coffee shop. Focused on creating an atmospheric experience that reflects the cozy ambiance of the physical location.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Responsive</span>
+                        </div>
                     </div>
                 </div>
-                <div class="portfolio-item" onclick="openProject(3)">
-                    <div class="portfolio-img">💡</div>
+                
+                <div class="portfolio-item" data-category="web" data-github="blog-website">
+                    <div class="portfolio-image">
+                        <div class="portfolio-img">�</div>
+                        <div class="portfolio-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-btn live-btn" title="View Live Site">
+                                    <span class="btn-icon">🔗</span>
+                                    <span class="btn-text">Live Demo</span>
+                                </a>
+                                <a href="https://github.com/MathekoTauu/blog-website" class="project-btn github-btn" target="_blank" title="View on GitHub">
+                                    <span class="btn-icon">📂</span>
+                                    <span class="btn-text">GitHub</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                     <div class="portfolio-content">
-                        <h3>Blog website</h3>
-                        <p>A simple blog website design of a focusing on trust, security, and simplified for blogging and engaging</p>
+                        <div class="project-category">Web Application</div>
+                        <h3>Personal Blog Platform</h3>
+                        <p>A clean and minimalist blog platform focused on readability and user engagement. Features include article management, commenting system, and social sharing.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Django</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                            <span class="tech-tag">TailwindCSS</span>
+                        </div>
                     </div>
                 </div>
-                <div class="portfolio-item" onclick="openProject(4)">
-                    <div class="portfolio-img">🏥</div>
+                
+                <div class="portfolio-item" data-category="web" data-github="sticky-notes-app">
+                    <div class="portfolio-image">
+                        <div class="portfolio-img">📋</div>
+                        <div class="portfolio-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/MathekoTauu/Sticky-notes-Appication" class="project-btn live-btn" title="View Live Site">
+                                    <span class="btn-icon">🔗</span>
+                                    <span class="btn-text">Live Demo</span>
+                                </a>
+                                <a href="https://github.com/MathekoTauu/Sticky-notes-Appication" class="project-btn github-btn" target="_blank" title="View on GitHub">
+                                    <span class="btn-icon">📂</span>
+                                    <span class="btn-text">GitHub</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                     <div class="portfolio-content">
-                        <h3>Sticky Notes Application</h3>
-                        <p>Sticky Note Application with Django. Prioritized accessibility and ease of use for all age groups.</p>
+                        <div class="project-category">Web Application</div>
+                        <h3>Sticky Notes App</h3>
+                        <p>An intuitive note-taking application with drag-and-drop functionality. Users can create, edit, and organize colorful sticky notes with real-time synchronization.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Django</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">AJAX</span>
+                            <span class="tech-tag">CSS3</span>
+                        </div>
                     </div>
                 </div>
-             <div class="portfolio-item" onclick="openProject(5)">
-                    <div class="portfolio-img">🎓</div>
+                
+                <div class="portfolio-item" data-category="web" data-github="news-application">
+                    <div class="portfolio-image">
+                        <div class="portfolio-img">📰</div>
+                        <div class="portfolio-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/MathekoTauu/News_hub" class="project-btn live-btn" title="View Live Site">
+                                    <span class="btn-icon">🔗</span>
+                                    <span class="btn-text">Live Demo</span>
+                                </a>
+                                <a href="https://github.com/MathekoTauu/News_hub" class="project-btn github-btn" target="_blank" title="View on GitHub">
+                                    <span class="btn-icon">📂</span>
+                                    <span class="btn-text">GitHub</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                     <div class="portfolio-content">
-                        <h3>News Application</h3>
-                        <p>News Application with Django designed to enhance experience and bring a vibrant feel. Balanced engagement with educational effectiveness.</p>
+                        <div class="project-category">Web Application</div>
+                        <h3>News Portal</h3>
+                        <p>A dynamic news application that aggregates content from multiple sources. Features include categorized news, search functionality, and personalized news feeds.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Django</span>
+                            <span class="tech-tag">REST API</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Bootstrap</span>
+                        </div>
                     </div>
                 </div>
-                <div class="portfolio-item" onclick="openProject(6)">
-                    <div class="portfolio-img">🏢</div>
+                
+                <div class="portfolio-item" data-category="landing" data-github="tshepiso-mahanga-landing">
+                    <div class="portfolio-image">
+                        <div class="portfolio-img">�‍♂️</div>
+                        <div class="portfolio-overlay">
+                            <div class="project-links">
+                                <a href="https://thegritrunner.co.za/" class="project-btn live-btn" title="View Live Site">
+                                    <span class="btn-icon">🔗</span>
+                                    <span class="btn-text">Live Demo</span>
+                                </a>
+                                <a href="https://thegritrunner.co.za/" class="project-btn github-btn" target="_blank" title="View on GitHub">
+                                    <span class="btn-icon">📂</span>
+                                    <span class="btn-text">GitHub</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                     <div class="portfolio-content">
-                        <h3>Tshepiso Mahanga - Landing Page</h3>
-                        <p>Running for charity .</p>
+                        <div class="project-category">Landing Page</div>
+                        <h3>Charity Run Campaign</h3>
+                        <p>An inspiring landing page for Tshepiso Mahanga's charity run campaign. Designed to motivate donations and participation with compelling storytelling and clear call-to-actions.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Mobile-First</span>
+                        </div>
                     </div>
                 </div>
+            </div>
+            <div class="portfolio-actions">
+                <a href="projects.html" class="cta-button secondary">View All Projects</a>
+            </div>
+            <div class="portfolio-cta">
+                <h3>Have a project in mind?</h3>
+                <p>Let's work together to bring your ideas to life</p>
+                <a href="#contact" class="cta-button primary">Start a Project</a>
             </div>
         </div>
     </section>
@@ -125,190 +486,195 @@
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-header">
+                <h2 class="section-title">Let's Work Together</h2>
+                <p class="contact-subtitle">Ready to bring your project to life? I'd love to hear from you and discuss how we can create something amazing together.</p>
+            </div>
             <div class="contact-content">
-                <div class="contact-form">
-                    <h3>Let's Work Together</h3>
-                    <input type="text" placeholder="Your Name" required>
-                    <input type="email" placeholder="Your Email" required>
-                    <input type="text" placeholder="Subject">
-                    <textarea rows="5" placeholder="Your Message" required></textarea>
-                    <button type="submit" class="cta-button">Send Message</button>
+                <div class="contact-form-container">
+                    <div class="form-header">
+                        <h3>Send Me a Message</h3>
+                        <p>Fill out the form below and I'll get back to you within 24 hours</p>
+                    </div>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                              
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                       
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Choose a subject</option>
+                                <option value="ui-ux-project">UI/UX Design Project</option>
+                                <option value="web-development">Web Development</option>
+                                <option value="consultation">Design Consultation</option>
+                                <option value="collaboration">Collaboration</option>
+                                <option value="other">Other</option>
+                            </select>
+                 
+                        </div>
+                        <div class="form-group">
+                            <label for="budget">Project Budget (Optional)</label>
+                            <select id="budget" name="budget">
+                                <option value="">Select budget range</option>
+                                <option value="under-5k">Under R2,500</option>
+                                <option value="10k-25k">R10,000 - R25,000</option>
+                                <option value="25k-plus">R25,000+</option>
+                                <option value="discuss">Let's discuss</option>
+                            </select>
+                       
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Project Details</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project, timeline, and any specific requirements..." required></textarea>
+                          
+                        </div>
+                        <button type="submit" class="submit-btn">
+                            <span class="btn-text">Send Message</span>
+                        </button>
+                    </form>
                 </div>
+                
                 <div class="contact-info">
-                    <div class="contact-item">
-                        <div class="contact-icon">📧</div>
-                        <div>
-                            <h4>Email</h4>
-                            <p>mathekomasemola8@gmail.com</p>
-                        </div>
+                    <div class="info-header">
+                        <h3>Get In Touch</h3>
+                        <p>Prefer to reach out directly? Here are other ways to connect with me</p>
                     </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">📱</div>
-                        <div>
-                            <h4>Phone</h4>
-                            <p>060 821 3147</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">📍</div>
-                        <div>
-                            <h4>Location</h4>
-                            <p>Cape Town , South Africa</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">💼</div>
-                        <div>
-                            <h4>LinkedIn</h4>
-                            <a href="https://www.linkedin.com/in/matheko-masemola/">LinkedIn</a>
                     
+                    <div class="contact-methods">
+                        <div class="contact-item">
+                            <div class="contact-icon email-icon">
+                                <span class="icon">📧</span>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                <p>mathekomasemola8@gmail.com</p>
+                                <a href="mailto:mathekomasemola8@gmail.com" class="contact-link">Send Email</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon phone-icon">
+                                <span class="icon">📱</span>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Phone</h4>
+                                <p>060 821 3147</p>
+                                <a href="tel:+27608213147" class="contact-link">Call Now</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon location-icon">
+                                <span class="icon">📍</span>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Location</h4>
+                                <p>Cape Town, South Africa</p>
+                                <span class="timezone">GMT+2 (SAST)</span>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon linkedin-icon">
+                                <span class="icon">💼</span>
+                            </div>
+                            <div class="contact-details">
+                                <h4>LinkedIn</h4>
+                                <p>Professional Network</p>
+                                <a href="https://www.linkedin.com/in/matheko-masemola/" target="_blank" class="contact-link">Connect on LinkedIn</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <h4>Follow My Work</h4>
+                        <div class="social-buttons">
+                            <a href="https://github.com/MathekoTauu" target="_blank" class="social-btn github">
+                                
+                                <span>GitHub</span>
+                            </a>
+                            <a href="https://www.linkedin.com/in/matheko-masemola/" target="_blank" class="social-btn linkedin">
+                               
+                                <span>LinkedIn</span>
+                            </a>
+                            <a href="mailto:mathekomasemola8@gmail.com" class="social-btn email">
+                             
+                                <span>Email</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="contact-cta">
+                <div class="cta-content">
+                    <h3>Ready to Start Your Project?</h3>
+                    <p>Let's schedule a free consultation call to discuss your ideas and how I can help bring them to life.</p>
+                    <a href="#" class="cta-button primary schedule-call">
+                    
+                        <span class="btn-text">Schedule Free Call</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="contact-background">
+            <div class="bg-shape contact-shape-1"></div>
+            <div class="bg-shape contact-shape-2"></div>
+            <div class="bg-shape contact-shape-3"></div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-main">
+                    <div class="footer-brand">
+                        <div class="footer-logo">
+                            <div class="logo-icon">M</div>
+                            <span class="brand-name">Matheko Masemola</span>
+                        </div>
+                        <p class="footer-tagline">UI/UX Designer & Software Engineer</p>
+                    </div>
+                    
+                    <div class="footer-social">
+                        <a href="https://github.com/MathekoTauu" target="_blank" class="social-link" aria-label="GitHub">
+                            <span class="social-icon">🐱</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/matheko-masemola/" target="_blank" class="social-link" aria-label="LinkedIn">
+                            <span class="social-icon">💼</span>
+                        </a>
+                        <a href="mailto:mathekomasemola8@gmail.com" class="social-link" aria-label="Email">
+                            <span class="social-icon">📧</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-bottom">
+                    <div class="footer-bottom-content">
+                        <div class="copyright">
+                            <p>&copy; 2025 Matheko Masemola. Made with ❤️</p>
+                        </div>
+                        <div class="footer-links">
+                            <a href="Matheko Masemola CV.pdf" target="_blank">Resume</a>
+                            <span class="divider">•</span>
+                            <a href="#contact">Let's Work Together</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-
-    <!-- Footer -->
-<footer style="background-color: #D6CFCF; padding: 20px; text-align: center;">
-    <div class="container">
-        <p style="color: #4B3D3D; font-size: 14px;">
-            &copy; 2025 Matheko Masemola. All rights reserved. Designed with ❤️
-        </p>
-        <p style="color:#8B7355; font-size: 12px;">
-            UI/UX Designer & Software Engineer
-        </p>
-        <p>
-            <a href="https://linkedin.com/in/yourprofile" style="color: #4B3D3D; text-decoration: none;">LinkedIn</a> |
-            <a href="https://github.com/yourprofile" style="color: #4B3D3D; text-decoration: none;">GitHub</a> |
-            <a href="mailto:your.email@example.com" style="color: #4B3D3D; text-decoration: none;">Contact</a>
-        </p>
-    </div>
-</footer>
-    <script>
-        // Mobile menu toggle
-        const mobileMenu = document.getElementById('mobileMenu');
-        const navLinks = document.getElementById('navLinks');
-
-        mobileMenu.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-        });
-
-        // Close mobile menu when clicking on a link
-        navLinks.addEventListener('click', (e) => {
-            if (e.target.tagName === 'A') {
-                navLinks.classList.remove('active');
-            }
-        });
-
-        // Header background change on scroll
-        window.addEventListener('scroll', () => {
-            const header = document.querySelector('header');
-            if (window.scrollY > 100) {
-                header.style.background = 'rgba(255, 255, 255, 0.95)';
-                header.style.backdropFilter = 'blur(10px)';
-            } else {
-                header.style.background = 'var(--white)';
-                header.style.backdropFilter = 'none';
-            }
-        });
-
-        // Smooth scrolling for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    const offsetTop = target.offsetTop - 80; // Account for fixed header
-                    window.scrollTo({
-                        top: offsetTop,
-                        behavior: 'smooth'
-                    });
-                }
-            });
-        });
-
-        // Portfolio project navigation
-        const YOUR_GITHUB_USERNAME = 'MathekoTauu'; // Replace with your actual GitHub username
-        
-        document.addEventListener('DOMContentLoaded', function() {
-            // Add event listeners to all portfolio items
-            document.querySelectorAll('.portfolio-item').forEach(item => {
-                const projectName = item.getAttribute('data-github');
-                
-                // Live site button
-                const liveBtn = item.querySelector('.live-btn');
-                liveBtn.addEventListener('click', (e) => {
-                    e.stopPropagation();
-                    // GitHub Pages URL format: https://username.github.io/repository-name
-                    const liveUrl = `https://${YOUR_GITHUB_USERNAME}.github.io/${projectName}`;
-                    window.open(liveUrl, '_blank');
-                });
-                
-                // GitHub repository button
-                const githubBtn = item.querySelector('.github-btn');
-                githubBtn.addEventListener('click', (e) => {
-                    e.stopPropagation();
-                    // GitHub repository URL format: https://github.com/username/repository-name
-                    const githubUrl = `https://github.com/${YOUR_GITHUB_USERNAME}/${projectName}`;
-                    window.open(githubUrl, '_blank');
-                });
-            });
-        });
-
-        // Contact form submission
-        document.querySelector('.contact-form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            alert('Thank you for your message! I\'ll get back to you soon.');
-            // In a real implementation, you would send the form data to a server
-            this.reset();
-        });
-
-        // Intersection Observer for animations
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'translateY(0)';
-                }
-            });
-        }, observerOptions);
-
-        // Observe all sections for scroll animations
-        document.querySelectorAll('section').forEach(section => {
-            section.style.opacity = '0';
-            section.style.transform = 'translateY(30px)';
-            section.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
-            observer.observe(section);
-        });
-
-        // Add active class to current section in navigation
-        window.addEventListener('scroll', () => {
-            const sections = document.querySelectorAll('section');
-            const navItems = document.querySelectorAll('.nav-links a');
-            
-            let current = '';
-            sections.forEach(section => {
-                const sectionTop = section.offsetTop - 100;
-                if (window.pageYOffset >= sectionTop) {
-                    current = section.getAttribute('id');
-                }
-            });
-
-            navItems.forEach(item => {
-                item.classList.remove('active');
-                if (item.getAttribute('href') === `#${current}`) {
-                    item.classList.add('active');
-                }
-            });
-        });
-    </script>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
-
