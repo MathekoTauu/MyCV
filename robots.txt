@@ -1,0 +1,10 @@
+# robots.txt for Matheko Masemola Portfolio
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://mathekotauu.github.io/git-task/sitemap.xml
+
+# Disallow specific paths (if any)
+Disallow: /admin/
+Disallow: /.git/

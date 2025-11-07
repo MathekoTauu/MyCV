@@ -102,13 +102,58 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-// Contact form submission
-document.querySelector('.contact-form').addEventListener('submit', function(e) {
-    e.preventDefault();
-    alert('Thank you for your message! I\'ll get back to you soon.');
-    // In a real implementation, you would send the form data to a server
-    this.reset();
-});
+// Contact form submission with Formspree
+const contactForm = document.querySelector('.contact-form');
+const formStatus = document.getElementById('form-status');
+
+if (contactForm) {
+    contactForm.addEventListener('submit', async function(e) {
+        e.preventDefault();
+        
+        const submitBtn = this.querySelector('.submit-btn');
+        const btnText = submitBtn.querySelector('.btn-text');
+        const originalText = btnText.textContent;
+        
+        // Show loading state
+        btnText.textContent = 'Sending... ⏳';
+        submitBtn.disabled = true;
+        
+        try {
+            const formData = new FormData(this);
+            const response = await fetch(this.action, {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            });
+            
+            if (response.ok) {
+                // Success
+                formStatus.textContent = '✅ Thank you! Your message has been sent successfully. I\'ll get back to you as soon as possible!';
+                formStatus.className = 'form-status success';
+                formStatus.style.display = 'block';
+                this.reset();
+                
+                // Hide success message after 5 seconds
+                setTimeout(() => {
+                    formStatus.style.display = 'none';
+                }, 5000);
+            } else {
+                throw new Error('Form submission failed');
+            }
+        } catch (error) {
+            // Error
+            formStatus.textContent = '❌ Oops! Something went wrong. Please try again or email me directly at mathekomasemola8@gmail.com';
+            formStatus.className = 'form-status error';
+            formStatus.style.display = 'block';
+        } finally {
+            // Reset button
+            btnText.textContent = originalText;
+            submitBtn.disabled = false;
+        }
+    });
+}
 
 // Intersection Observer for animations
 const observerOptions = {
